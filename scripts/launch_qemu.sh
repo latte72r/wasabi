@@ -1,5 +1,5 @@
 #!/bin/bash -e
-PROJ_ROOT="$(dirname $(dirname ${BASH_SORCE:-$0}))"
+PROJ_ROOT="$(dirname "$(dirname "${BASH_SOURCE:-$0}")")"
 cd "${PROJ_ROOT}"
 
 PATH_TO_EFI="$1"
